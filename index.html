@@ -16,22 +16,60 @@
       box-sizing: border-box;
     }
 
-    body {
-      font-family: 'Outfit', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
+      body {
+       font-family: 'Outfit', sans-serif;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       padding: 20px;
+       font-size: 12px;
+      } 
+
+      .card {
+       background: hsl(0, 0%, 100%);
+       border-radius: 2px;
+       box-shadow: 0 1rem 2rem hsl(0, 0%, 0%, 0.2);
+       padding: 20px;
+       max-width: 350px;
+      }
+
+      .card img {
+       max-width: 100%;
+       border-radius: 15px;
+      }
+  
+      .card h1 {
+       color: hsl(218, 44%, 22%);
+       font-size: 18px;
+       margin: 20px 0 10px;
+      }
+  
+      .card p {
+       color: hsl(220, 15%, 55%);
+       line-height: 1.5;
+       font-size: 14px;
+      }
+
+      .background {
+       background: hsl(212, 45%, 89%);
+       height: 1000px;
+       width: 90%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 100px;
+     }
+
 </style>
 
 </head>
 
 <body>
-  <div class="container">
-    <dv class="card">
+  <div class="background">
+   <div class="container">
+    <div class="card">
       <img src="./images/image-qr-code.png" alt="QR code image">
       <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
